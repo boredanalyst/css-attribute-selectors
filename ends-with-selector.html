@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Intro to Selectors</title>
+        <style>
+            * {
+                color:black;
+            }
+
+            html {
+                background-color:white;
+            }
+
+            main {
+                display:flex;
+            }
+
+            article {
+                margin:auto;
+            }
+
+            article h1 {
+                font-size:8vh;
+                margin-bottom:0;
+            }
+
+            li {
+                padding:1vh;
+                list-style:none;
+            }
+
+            li[class$="g" i] {
+                background-color:yellow;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>Introduction to Attribute Selectors</h1>
+                <i>Attribute selectors allow you to style elements based on any attribute they have.</i>
+                <section>
+                    <h3>Ends-With Selector</h3>
+                    <p>The list item with a class ending with the letter <i>g</i> is styled.</p>
+                    <p>The rest don't so they do not get styled.</p>
+                    <section class="sample">
+                        <ol>
+                            <li class="01styleg">I am the first item.</li>
+                            <li class="02style">I am the second item.</li>
+                            <li class="01style">I am the third item.</li>
+                        </ol>
+                    </section>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
